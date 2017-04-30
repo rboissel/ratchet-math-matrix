@@ -4,19 +4,20 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{41E83D18-9153-483E-85B3-4FC195D204C4}</ProjectGuid>
+    <ProjectGuid>{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Common</RootNamespace>
-    <AssemblyName>Common</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <RootNamespace>ratchet_math_matrix_net40</RootNamespace>
+    <AssemblyName>ratchet-math-matrix-net40</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
-    <OutputPath>..\..\bin\Debug\samples\</OutputPath>
+    <OutputPath>..\..\bin\Debug\ratchet-math-matrix\lib\net40\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -24,7 +25,7 @@
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
-    <OutputPath>..\..\bin\Release\samples\</OutputPath>
+    <OutputPath>..\..\bin\Release\ratchet-math-matrix\lib\net40\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
@@ -32,7 +33,6 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -41,17 +41,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Cube.cs" />
-    <Compile Include="Quad3.cs" />
-    <Compile Include="Triangle2.cs" />
+    <Compile Include="..\..\ratchet-math-matrix\mat2.cs">
+      <Link>mat2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ratchet-math-matrix\mat3.cs">
+      <Link>mat3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ratchet-math-matrix\mat4.cs">
+      <Link>mat4.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ratchet-math-matrix\vec2.cs">
+      <Link>vec2.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ratchet-math-matrix\vec3.cs">
+      <Link>vec3.cs</Link>
+    </Compile>
+    <Compile Include="..\..\ratchet-math-matrix\vec4.cs">
+      <Link>vec4.cs</Link>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Triangle3.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\ratchet-math-matrix\ratchet-math-matrix.csproj">
-      <Project>{a584ab98-9710-4990-a6ec-3482b3728d74}</Project>
-      <Name>ratchet-math-matrix</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

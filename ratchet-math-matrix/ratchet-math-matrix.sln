@@ -13,6 +13,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Common", "Samples\Common\Co
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SimpleLookAt", "Samples\SimpleLookAt\SimpleLookAt.csproj", "{D0CC4415-B593-4ADB-AAF6-9257D3753317}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Build", "Build", "{225AFF41-4120-4114-AD30-D542321115A8}"
+	ProjectSection(SolutionItems) = preProject
+		Build\Ratchet.Math.Matrix.nuspec = Build\Ratchet.Math.Matrix.nuspec
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-math-matrix-net45", "Build\ratchet-math-matrix-net45\ratchet-math-matrix-net45.csproj", "{28DB360E-7401-4C29-A551-60C3419AD408}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ratchet-math-matrix-net40", "Build\ratchet-math-matrix-net40\ratchet-math-matrix-net40.csproj", "{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -35,6 +44,14 @@ Global
 		{D0CC4415-B593-4ADB-AAF6-9257D3753317}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D0CC4415-B593-4ADB-AAF6-9257D3753317}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D0CC4415-B593-4ADB-AAF6-9257D3753317}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DB360E-7401-4C29-A551-60C3419AD408}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DB360E-7401-4C29-A551-60C3419AD408}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DB360E-7401-4C29-A551-60C3419AD408}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DB360E-7401-4C29-A551-60C3419AD408}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -43,5 +60,7 @@ Global
 		{42B06540-F133-49E9-A387-6F190F300F5D} = {CCDD8008-666E-401F-AF2B-370A52B7CFA4}
 		{41E83D18-9153-483E-85B3-4FC195D204C4} = {CCDD8008-666E-401F-AF2B-370A52B7CFA4}
 		{D0CC4415-B593-4ADB-AAF6-9257D3753317} = {CCDD8008-666E-401F-AF2B-370A52B7CFA4}
+		{28DB360E-7401-4C29-A551-60C3419AD408} = {225AFF41-4120-4114-AD30-D542321115A8}
+		{8AE83D27-8E09-4D2A-8543-2AA3DCE2EADB} = {225AFF41-4120-4114-AD30-D542321115A8}
 	EndGlobalSection
 EndGlobal
